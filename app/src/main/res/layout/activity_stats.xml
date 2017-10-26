@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sgchowdhury.hw04.StatsActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Trivia Stats"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:text="Correct Answers"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarCorrect"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/textViewPerct"
+        android:layout_toEndOf="@+id/textViewPerct" />
+
+    <TextView
+        android:id="@+id/textViewPerct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#006400"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/progressBarCorrect"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textViewTry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="  try again and see if you can get all of them right!"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPerct"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewPerct"
+        android:layout_marginBottom="15dp"
+        android:text="Quit" />
+
+    <Button
+        android:id="@+id/buttonTry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonQuit"
+        android:layout_alignEnd="@+id/progressBarCorrect"
+        android:layout_alignRight="@+id/progressBarCorrect"
+        android:text="try again" />
+</RelativeLayout>
